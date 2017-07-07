@@ -14,4 +14,4 @@ The main goal of the paper is to predict taxi demand quantities at different tax
 
 1.	The first step would be to create a discrete time series for the demand counts with an aggregation period of 30 minutes
 
-2.	The first two base-line models (TVP and WTVP) characterize the demand with its occurrence period (period 1, period 2,…) in the day (with 30 minutes as aggregation period, we have 48 periods in the day) and also  with the day type ( Monday, Tuesday,…)
+2.	The first two base-line models (TVP and WTVP) characterize the demand with its occurrence period (period 1, period 2,…) in the day (with 30 minutes as aggregation period, we have 48 periods in the day) and also  with the day type ( Monday, Tuesday,…). Therefore, one way for the implementation would be to construct a list of tables for the demand. Each table contains n1 columns indicating the day period (n1=48 for our case) and n2 rows for the day of the weeks (n2=7). We end up by having  a list of n table  where n is the number of weeks of  the recorded data 
